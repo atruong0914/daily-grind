@@ -50,7 +50,11 @@ console.log(coffee);
 
 alert(coffeeTemplate(coffee));
 
+// adds coffee to page?
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+
+// change bg color of html element
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 function coffeeTemplate(coffee){
     let myReturn = "";
